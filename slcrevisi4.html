@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio SLC - Austin Rafif Kurniyanto | SMP Islam Dian Didaktika</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+  <!-- Header & Navigasi -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-brand-500/30">
+          A
+        </div>
+        <div>
+          <span class="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white block leading-none">Austin R.K</span>
+          <span class="text-[10px] text-slate-500 dark:text-slate-400">SLC Portofolio Kelas IX</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+        <a href="#pengalaman" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">Pengalaman</a>
+        <a href="#dhiporia" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">Dhiporia</a>
+        <a href="#goals" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">Goals & Sikap</a>
+        <a href="#bacaan" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">Buku Bacaan</a>
+        <a href="#rapor" class="hover:text-brand-600 dark:hover:text-brand-500 transition-colors">Hasil Rapor</a>
+      </nav>
+
+      <button id="theme-toggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+        <i id="theme-toggle-dark-icon" class="fa-solid fa-moon hidden text-lg"></i>
+        <i id="theme-toggle-light-icon" class="fa-solid fa-sun hidden text-lg"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section & Perkenalan -->
+  <section class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-50 dark:bg-brand-500/10 border border-brand-200 dark:border-brand-500/20 text-brand-600 dark:text-brand-400 text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+          <span>Student Led Conference (SLC) 2026/2027</span>
+        </div>
+        
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh
+        </h1>
+        
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
+          Mama&Papa, perkenalkan ini Bu Hillya Wali Kelas. perkenalkan ini orang tua saya. Pada kesempatan ini, saya <strong class="text-brand-600 dark:text-brand-500">Austin Rafif Kurniyanto</strong> mau melaporkan hasil belajar saya di kelas 9B di <strong>SMP Islam Dian Didaktika</strong>.
+        </p>
+
+        <!-- Quote Warren Buffett -->
+        <blockquote class="p-4 border-l-4 border-brand-500 bg-brand-50/50 dark:bg-slate-800/50 rounded-r-xl italic text-sm text-slate-700 dark:text-slate-300">
+          "Risk comes from not knowing what you're doing." — Warren Buffett
+        </blockquote>
+      </div>
+
+      <!-- Foto Profil (Telah diisi menggunakan foto panahan kamu) -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="relative w-72 h-80 md:w-80 md:h-96 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-slate-200 dark:bg-slate-800">
+          <!-- Pastikan nama file foto disimpan dengan nama "foto-austin.jpg" atau ubah src sesuai lokasi file -->
+          <img src="assets/panahan.jpg" alt="Foto Austin Rafif Kurniyanto" class="w-full h-full object-cover object-center">
+
+          <div class="absolute bottom-4 left-4 right-4 p-3 bg-slate-900/80 backdrop-blur-md rounded-xl border border-white/20 text-white text-xs">
+            <p class="font-bold">Austin Rafif Kurniyanto</p>
+            <p class="text-slate-200">Kelas IX - SMP Islam Dian Didaktika</p>
+            <p class="text-brand-400 font-semibold text-[11px] mt-0.5"><i class="fa-solid fa-bullseye"></i> Kejuaraan Panahan</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 1. Pengalaman Belajar -->
+  <section id="pengalaman" class="py-12 bg-white dark:bg-slate-800/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">1. Pengalaman Belajar di Kelas</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Refleksi suasana dan momen berkesan selama pembelajaran.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400 flex items-center justify-center text-lg mb-3">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Perasaan Saat Belajar</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Selama belajar di kelas IX, saya merasa semakin tertantang dan bersemangat untuk memahami materi-materi baru.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400 flex items-center justify-center text-lg mb-3">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Lingkungan Kelas</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Lingkungan belajar di kelas sangat mendukung, saling bantu saat berdiskusi, dan gurunya interaktif.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400 flex items-center justify-center text-lg mb-3">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Momen Paling Asyik</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Momen paling asyik adalah saat proyek kelompok dan pementasan, karena bisa menyatukan ide bersama teman-teman.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Kegiatan Dhiporia -->
+  <section id="dhiporia" class="py-12 max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">2. Kegiatan Dhiporia</h2>
+      <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Laporan peran, persiapan, dan pengalaman dalam acara Dhiporia.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">
+        <h3 class="font-bold text-brand-600 dark:text-brand-500 flex items-center space-x-2">
+          <i class="fa-solid fa-masks-theater"></i>
+          <span>Konsep & Persiapan</span>
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          Dalam pementasan Dhiporia, konsep acara dan persiapan dilakukan secara rutin bersama tim untuk memastikan alur penampilan berjalan lancar.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">
+        <h3 class="font-bold text-brand-600 dark:text-brand-500 flex items-center space-x-2">
+          <i class="fa-solid fa-hands-holding-circle"></i>
+          <span>Kontribusi & Pembelajaran</span>
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          Saya berkontribusi aktif dalam sesi latihan dan koordinasi tim. Kendala yang dihadapi dapat diatasi dengan komunikasi serta kerja sama yang baik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Sikap & Goals Belajar -->
+  <section id="goals" class="py-12 bg-white dark:bg-slate-800/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">3. Evaluasi Sikap & Target (Goals)</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Komitmen perbaikan diri dan target di Semester 1.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Sikap yang harus diperbaiki -->
+        <div class="p-6 rounded-2xl bg-rose-50/50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900/50">
+          <h3 class="font-bold text-rose-600 dark:text-rose-400 mb-4 flex items-center space-x-2">
+            <i class="fa-solid fa-wrench"></i>
+            <span>Sikap yang Harus Diperbaiki</span>
+          </h3>
+          <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-disc list-inside">
+            <li>Mengurangi kebiasaan menunda pekerjaan / tugas sekolah.</li>
+            <li>Meningkatkan fokus dan kedisiplinan manajemen waktu.</li>
+            <li>Lebih aktif bertanya jika ada materi yang belum dipahami.</li>
+          </ul>
+        </div>
+
+        <!-- 3 Goals Belajar -->
+        <div class="p-6 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/50">
+          <h3 class="font-bold text-emerald-600 dark:text-emerald-400 mb-4 flex items-center space-x-2">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>3 Goals Belajar Semester Ini</span>
+          </h3>
+          <ol class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-decimal list-inside">
+            <li>Mencapai rata-rata nilai akademis di atas target rata-rata.</li>
+            <li>Menyelesaikan seluruh tugas dan remedial tepat waktu tanpa terlewat.</li>
+            <li>Meningkatkan pemahaman mandiri melalui kebiasaan membaca rutin.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Laporan Buku Bacaan -->
+  <section id="bacaan" class="py-12 max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">4. Laporan Buku Bacaan</h2>
+      <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Ringkasan literasi dan buku yang telah dibaca.</p>
+    </div>
+
+    <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 max-w-3xl mx-auto shadow-sm">
+      <div class="flex items-start space-x-4">
+        <div class="w-12 h-12 rounded-xl bg-brand-100 dark:bg-brand-500/20 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl flex-shrink-0">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-lg">FILOSOFI TERAS</h3>
+          <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold mb-2">Henry Manampiring</p>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            "Filosofi Teras" mengajarkan cara mengatasi stres dan kecemasan modern menggunakan Stoisisme (Filsafat Stoa). Intinya: penderitaan muncul bukan karena masalahnya, melainkan dari cara kita menilai masalah tersebut..
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Presentasi Nilai Rapor -->
+  <section id="rapor" class="py-12 bg-white dark:bg-slate-800/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">5. Evaluasi Hasil Rapor</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Laporan pencapaian akademik dan area peningkatan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+        <div class="p-5 rounded-2xl bg-emerald-50/60 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800">
+          <h3 class="font-bold text-emerald-700 dark:text-emerald-400 mb-2 flex items-center space-x-2">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span>Nilai Tertinggi</span>
+          </h3>
+          <p class="text-sm text-slate-700 dark:text-slate-300">
+            Dua pelajaran dengan nilai tertinggi ada di pelajaran <strong>Informatika</strong> dan <strong>Ips</strong> karena saya sangat menyukai materi dan berdisskusi.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-amber-50/60 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
+          <h3 class="font-bold text-amber-700 dark:text-amber-400 mb-2 flex items-center space-x-2">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Pelajaran yang Harus Ditingkatkan</span>
+          </h3>
+          <p class="text-sm text-slate-700 dark:text-slate-300">
+            Pelajaran yang perlu ditingkatkan adalah <strong>Ipa & Matematika</strong> karena membutuhkan lebih banyak latihan soal dan ketelitian .
+          </p>
+        </div>
+      </div>
+
+      <!-- Motivasi Diri -->
+      <div class="p-6 rounded-2xl bg-brand-600 text-white text-center max-w-3xl mx-auto shadow-lg">
+        <h3 class="font-bold text-lg mb-2">Motivasi & Pesan untuk Diri Sendiri</h3>
+        <p class="text-sm text-brand-100 italic">
+          "Tetap semangat, jangan cepat puas dengan hasil yang dicapai, dan selalu berusaha menjadi pribadi yang lebih baik setiap harinya!"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-slate-950 text-slate-500 text-center text-xs">
+    <p>&copy; 2026 Austin Rafif Kurniyanto - SMP Islam Dian Didaktika. Hak Cipta Dilindungi.</p>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      lightIcon.classList.remove('hidden');
+    } else {
+      document.documentElement.classList.remove('dark');
+      darkIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+      darkIcon.classList.toggle('hidden');
+      lightIcon.classList.toggle('hidden');
+
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    });
+  </script>
+
+</body>
+</html>
